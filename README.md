@@ -26,4 +26,4 @@ Now that GNURadio is installed, we can use GNURadio to set up some basic example
 
 ### (Intermediate) Installing an OOT Module
 
-### Adding a Block with `gr_modtool`, the Swiss-Army Knife of GNURadio
+### (Advanced) Adding a Block with `gr_modtool`, the Swiss-Army Knife of GNURadio
