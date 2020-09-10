@@ -12,7 +12,7 @@ First, we will need to get an instance of Ubuntu or Raspbian Linux working. This
 This is the easiest way to get GNURadio up and running.
 
 ### Ubuntu LTS (20.04) over Windows Subsystem for Linux (WSL) 2
-This is a nice way to use a virtualized Linux kernel setup on Windows without needing to do a full OS install.
+This is a nice way to use a virtualized Linux kernel setup on Windows without needing to do a full OS install. Pierce edit.
 
 ### Raspberry Pi OS
 
