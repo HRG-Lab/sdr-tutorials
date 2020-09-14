@@ -20,7 +20,6 @@ This is a nice way to use a virtualized Linux kernel setup on Windows without ne
 
 ### Raspberry Pi OS
 
-
 ## Guided Tutorials for HRG-Lab
 
 Now that GNURadio is installed, we can use GNURadio to set up some basic examples. Descriptions of each tutorial are below, and the instructions are inside each specific sub-directory of this repository.
