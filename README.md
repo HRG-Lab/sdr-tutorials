@@ -38,6 +38,8 @@ GNURadio Conference publicly posts their conference talks on their [GR Youtube c
 * [ADI Transceivers Deep Dive - Travis Collins](https://www.youtube.com/watch?v=VFqg6eN2ACE)
 * [gr-iio: Nuances, Adv Features, New Stuff - Travis Collins](https://www.youtube.com/watch?v=tX8Tg9TBkPw)
 * [Mega Hertz, Mega Samples, Mega bits, Mega Confusing - Robin Getz](https://www.youtube.com/watch?v=PNMOwhEHE6w)
+* GRCon20 (link not available yet): How Strong is my SDR Signal? - Martin Braun
+* [ECE 4305 - Software Defined Radio Systems and Analysis @ WPI](https://www.youtube.com/playlist?list=PLBfTSoOqoRnOTBTLahXBlxaDUNWdZ3FdS)
 
 ### Random Websites (Wikis, tutorials, github)
 
