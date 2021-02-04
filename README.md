@@ -9,10 +9,48 @@ You should clone this repository to download a copy of all of the example flowgr
 First, we will need to get an instance of Ubuntu or Raspbian Linux working. This section will detail several setups depending on if you have native Ubuntu, native Windows, or an embedded device such as a Raspberry Pi.
 
 ### Pybombs Overview
+[PyBOMBS](https://github.com/gnuradio/pybombs) is the python-based packaged manager for GNURadio that was developed to handle dependencies and aid in building from scratch. It is the recommended way to install GNURadio.
 
-### Native Ubuntu LTS (20.04)
+### Ubuntu LTS (20.04)
+In general, these instructions apply to any instance of Ubuntu, even within WSL.
 
-This is the easiest way to get GNURadio up and running.
+#### First Time Setup
+If this is the first time you're setting up the Ubuntu instance, you'll to install `pip` and PyBOMBS for Python 3:
+
+```bash
+sudo apt install python3 python3-pip
+sudo -H pip3 install --upgrade git+https://github.com/gnuradio/pybombs.git
+```
+Next, you'll want to initialize PyBOMBS in your home directory with the following command:
+
+```bash
+pybombs auto-config
+```
+I keep GNURadio inside my home directory in `~/gnuradio/` but you can keep it wherever you have proper permissions.
+
+#### Install GNURadio Prefix (GR 3.8 | UHD 3.15)
+You should keep your GNURadio contained in an prefix, which is the GR name for an environment. Below, we create a `gr38_uhd315` to install GNURadio 3.8 with the USRP Hardware Driver version 3.15-LTS. This is the default in the recipes file. If you need to modify this, you'll want to modify the recipes in the respective PyBOMBS directory. First you'll want to create the directory for the prefix and initialize it accordingly.
+
+```bash
+mkdir -p ~/gnuradio/gr38_uhd315
+# Initialize the prefix and name it with the alias gr38_uhd315
+pybombs prefix init ~/gr38_uhd315 -a gr38_uhd315
+```
+Now, for PyBOMBS, you have to add recipes, which are instructions that tell PyBOMBS how to install things. The `-v` flag specifies verbose output, and the `-p` flag specifies the prefix alias that you're installing to, which is the one you set above.
+
+```bash
+# Add the default recipes, which are gr-recipes and gr-etcetera from their GitHub repo
+pybombs -v -p gr38_uhd315 recipes add-defaults
+# Add the Ettus Research developed recipes
+pybombs -v -p gr38_uhd315 recipes add ettus-pybombs git+https://github.com/EttusResearch/ettus-pybombs.git
+```
+Finally, you're ready to install GNURadio
+
+```bash
+pybombs -v -p gr38_uhd315 install uhd gnuradio
+```
+
+You can install other packages too.
 
 ### Ubuntu LTS (20.04) over Windows Subsystem for Linux (WSL) 2
 
