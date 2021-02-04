@@ -34,7 +34,7 @@ You should keep your GNURadio contained in an prefix, which is the GR name for a
 ```bash
 mkdir -p ~/gnuradio/gr38_uhd315
 # Initialize the prefix and name it with the alias gr38_uhd315
-pybombs prefix init ~/gr38_uhd315 -a gr38_uhd315
+pybombs prefix init ~/gnuradio/Ugr38_uhd315 -a gr38_uhd315
 ```
 Now, for PyBOMBS, you have to add recipes, which are instructions that tell PyBOMBS how to install things. The `-v` flag specifies verbose output, and the `-p` flag specifies the prefix alias that you're installing to, which is the one you set above.
 
