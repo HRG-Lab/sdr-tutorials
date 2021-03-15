@@ -64,7 +64,8 @@ There are many great learning resources out there for SDR from reading material 
 
 ### Reading Material
 
-* [PySDR: A Guide to SDR and DSP using Python](http://pysdr.org/index.html) - This is probably the best starting point for a new user. It contains indepth overview of DSP theory, digital communications, Python, and examples using the PlutoSDR. The references section includes more textbooks.
+* [PySDR: A Guide to SDR and DSP using Python](https://pysdr.org/index.html) - This is probably the best starting point for a new user. It contains indepth overview of DSP theory, digital communications, Python, and examples using the PlutoSDR. The references section includes more textbooks.
+* [WirelessPi](https://wirelesspi.com) - A fantastic course for introductory communications, signal processing, SDR, and GNURadio by Dr. Qasim Chaudhury. Worth the $55 investment in the material.
 * [Software-Defined Radio for Engineers](https://www.analog.com/en/education/education-library/software-defined-radio-for-engineers.html) - This is written by the Analog Devices team and is very good for understanding theory. It uses MATLAB and the ADALM-PlutoSDR, but the DSP theory is easily implementable in Python.
 
 ### SDR Videos to Watch
